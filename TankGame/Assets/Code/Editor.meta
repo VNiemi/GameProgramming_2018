@@ -1,9 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: b1ab19fe8b6c72446a90b11261a6a13d
+=======
+guid: bc09630f3b5879f4f95874f40ef1e50e
+>>>>>>> sami_branch/master
 folderAsset: yes
 timeCreated: 1516606804
 licenseType: Free
 DefaultImporter:
+<<<<<<< HEAD
+=======
+  externalObjects: {}
+>>>>>>> sami_branch/master
   userData: 
   assetBundleName: 
   assetBundleVariant: 

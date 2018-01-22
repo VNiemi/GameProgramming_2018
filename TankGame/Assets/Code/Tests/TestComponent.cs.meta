@@ -1,8 +1,16 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 6cd0247e723209b40b99593428265d99
 timeCreated: 1516607441
 licenseType: Free
 MonoImporter:
+=======
+guid: 3e534aea5c88ac74f87b1b58f78be7fe
+timeCreated: 1516607373
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+>>>>>>> sami_branch/master
   serializedVersion: 2
   defaultReferences: []
   executionOrder: 0

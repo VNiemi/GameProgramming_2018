@@ -44,8 +44,10 @@ namespace TankGame.AI
 				// 2. Are we close enough the current waypoint?
 				//   2.1 If yes, get the next waypoint
 				CurrentWaypoint = GetWaypoint();
-				// 3. Move towards the current waypoint
-				// 4. Rotate towards the current waypoint
+                // 3. Move towards the current waypoint
+                // 4. Rotate towards the current waypoint
+                Owner.Mover.Turn(CurrentWaypoint.Position - Owner.transform.position);
+                Owner.Mover.Move(Owner.transform.forward);
 			}
 		}
 

@@ -36,13 +36,15 @@ namespace TankGame
 
 		private void InitStates()
 		{
-			// TODO: Implement me!
-		}
+            WaypointSystem.Path path = FindObjectOfType<WaypointSystem.Path>();
+            CurrentState = new PatrolState(this, path, WaypointSystem.Direction.Forward, 5);
+            CurrentState.StateActivated();
+        }
 
 		protected override void Update()
 		{
 			// TODO: Remove this.
-			return;
+			// return;
 
 			CurrentState.Update();
 		}

@@ -48,20 +48,6 @@ namespace TankGame
 			transform.position = position;
 		}
 
-        public void Move(Vector3 direction)
-        {
-            direction = direction.normalized;
-            Vector3 position = transform.position + direction * _moveSpeed * Time.deltaTime;
-            transform.position = position;
-        }
-
-        public void Turn(Vector3 target)
-        {
-
-            float direction = Vector3.SignedAngle(gameObject.transform.forward, target,Vector3.up);
-            if (direction < 0) { Turn(-1); } else { Turn(1); }
-            
-            
-        }
+       
     }
 }

@@ -50,6 +50,9 @@ namespace TankGame
 				new PatrolState( this, _path, _direction, _waypointArriveDistance );
 			_states.Add( patrol );
 
+            FollowTargetState follow = new FollowTargetState(this);
+            _states.Add(follow);
+
 			CurrentState = patrol;
 			CurrentState.StateActivated();
 		}
@@ -84,17 +87,18 @@ namespace TankGame
 		{
 			// Returns the first object from the list _states which State property's value
 			// equals to stateType. If no object is found, returns null.
-			return _states.FirstOrDefault( state => state.State == stateType );
-			
-			// Foreach version of the same thing.
-			//foreach ( AIStateBase state in _states )
-			//{
-			//	if ( state.State == stateType )
-			//	{
-			//		return state;
-			//	}
-			//}
-			//return null;
-		}
+			// return _states.FirstOrDefault( state => state.State == stateType );
+
+            // Foreach version of the same thing.
+
+            foreach (AIStateBase state in _states)
+            {
+                if (state.State == stateType)
+                {
+                    return state;
+                }
+            }
+            return null;
+        }
 	}
 }
